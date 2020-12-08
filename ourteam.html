@@ -1,0 +1,181 @@
+<!-- 4 pages: 1 for each team member held in one scrolling page shell to highlight each "member of the firm" -->
+<!DOCTYPE HTML>
+<!-- This site is designed around  open source template simple banner from https://www.html5webtemplates.co.uk -->
+<!-- They request we leave their footer link for attribution -->
+<html lang=en>
+<!--This page provides an about section of each of the members. Profile info and images were provided by each team member-->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>EHPS Consulting</title>
+  <meta name="keywords" content="GIS, Data Management, Remote Sensing, Cartography, GIS Applications" />
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <script src="js/jscode.js"> </script>
+
+  <!--This link calls font for name heading-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <!--This link loads jQuery Library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+          
+          <div id="logo">
+            <div id="logo_text">
+              <!-- class="logo_colour" sets the color of the text -->
+              <h1><a href="index.html">EHPS<span class="logo_colour">GIS Consultancy</span></a></h1>
+              <h2>Geographic Information Solutions</h2>
+            </div>
+          </div> <!-- ends logo settings -->
+          
+       <!--Edyn Hillman owns the following menubar section-->
+       <div id="menubar">
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+              <div class="dropdown">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content">            <!--Dropdown menu that references each service page on the 'Services page' -->
+                <a href="services.html#Urban">Urban Services</a>
+                <a href="services.html#Env">Environmental Services</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Our Team</button>        <!--Dropdown menu that references each profile on the 'Our Team' page-->
+                <div class="dropdown-content">
+                <a href="ourteam.html#DavidsProfile">David Purdham</a>
+                <a href="ourteam.html#JamesProfile">James Serendip</a>
+                <a href="ourteam.html#EdynsProfile">Edyn Hillman</a>
+                <a href="ourteam.html#RaghadsProfile">Raghad Estanbouli</a>
+                </div>
+              </div>
+               
+        </div>
+      </div>  <!--ends menu bar setting -->  
+        <!-- JQuery for slide down panel of "Fun Facts": James Serendip owns this
+          adapted from w3schools -->
+      <script> 
+            $(document).ready(function(){
+              $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+              });
+            });
+            </script> 
+          <script> 
+          $(document).ready(function(){
+            $("#flipJS").click(function(){
+              $("#panelJS").slideDown("slow");
+            });
+          });
+          </script> 
+          <script> 
+            $(document).ready(function(){
+              $("#flipEH").click(function(){
+                $("#panelEH").slideDown("slow");
+              });
+            });
+            </script>  
+                <script> 
+                  $(document).ready(function(){
+                    $("#flipRE").click(function(){
+                      $("#panelRE").slideDown("slow");
+                    });
+                  });
+                  </script>  
+    </div> <!-- ends header section -->
+
+    <section class="profilepage" id="David">  <!--Profile for David-->
+     
+      <a id="DavidProfile">
+      <figure id="PhotoDP">
+        <img src= "images/David.jpg" alt="picture of David Purdham" class="profile_photo">  <!--uploaded portrait photo-->
+        <div id="flip">  Click for some Fun Facts about David Purdham  </div>
+        
+        <div id="panel">David played varsity Ultimate Frisbee in university and unfortunately is not the Heir to
+          any throne.  <!-- JQuery activates this panel on click: James Serendip-->
+        </div>
+      </figure>
+      </a>
+      <div class="profile_text">  <!--Section providing info about David-->
+        <h5>David Purdham</h5>
+        <p>David is a GIS Application Specialist with a background in Geography and Environmental Sustainability. David
+          can extract and manipulate data through various programming languages and enjoys producing visually appealing maps
+        to illustrate the findings. With a keen visual eye, David likes to explore different designs for webpages and map
+        producations for the best representation. Outside of work, sports and trail biking share David's interests as he enjoys
+        to get out and be active.
+        </p>
+      </div>
+    </section>
+    <section class="profilepage" id="James">  <!--Profile for James-->
+      <a id="JamesProfile">
+      <figure id="PhotoJS">
+        <img src= "images/James.jpg"  alt="picture of James Serendip" class="profile_photo"> <!--uploaded portrait photo-->
+        <div id="flipJS">  Click for some Fun Facts about James Serendip  </div>
+        <div id="panelJS">James is also a certified Clinical Hypnotherapist.  James grew up in the US, living in New York, 
+          New Orleans, Denver, Hawaii and New Mexico before moving to Penticton BC which he now calls home.
+        </div> <!-- JQuery activates this panel on click: James Serendip-->
+      </figure>
+      </a>
+      <div class="profile_text">    <!--Section providing info about James-->
+        <h5>James Serendip</h5>
+        <p>James is a GIS Applications Specialist with an emphasis on communications.
+          With a strong background in education, James helps our clients understand what
+          the tools of GIS can do for their enterprise.  James is also a programmer with
+          a focus on Python applications and arcpy.  James's interests include Remote
+          Sensing and Surveying and Geodesy.  In the mornings you can find James down by 
+          the lake practicing or teaching Tai Chi Chuan, and on the weekends you will
+          find him out in the woods hiking, camping, fishing or making bow-drill fires. 
+        </p>  
+ 
+      </div>
+    </section> 
+    <section class="profilepage" id="Edyn"><!--Profile for Edyn-->
+      <a id="EdynsProfile">
+      <figure id="PhotoEH">
+      <img src= "images/Edyn.jpg"  alt="picture of Edyn Hillman" class="profile_photo" > <!--uploaded 'portrait' photo-->
+      <div id="flipEH">  Click for some Fun Facts about Edyn Hillman  </div>
+      <div id="panelEH">Edyn has worked as a stand-in for British rocker Robert Plant in
+        a recent film about Led Zeppelin.
+      </div>  <!-- JQuery activates this panel on click: James Serendip-->
+    </figure>
+    </a>
+      <div class="profile_text"> <!--Section providing info on Edyn-->
+        <h5>Edyn Hillman</h5>
+        <p>Edyn is a GIS Applications Specialist with a background in Biology who is focused
+          on environmental applications of GIS. Edyn is knowledgable in areas of conservation,
+          ecology, and environmental decisions and can help clients with decision making 
+          related to environmental services. Edyn is also proficient at creating maps and the use
+          of programming languages such as python, html, css, R, and javascript. In the few hours
+          that Edyn is not chained to his desk doing schoolwork he enjoys to spend hiking, writing music,
+          taking wildlife/landscape photography, or creating graphic designs. </p>
+      </div>
+    </section>
+    <section class="profilepage" id="Raghad"><!--Profile for Raghad-->
+      <a id="RaghadsProfile">
+      <figure id="PhotoRE">
+        <img src= "images/Raghad.jpg"  alt="picture of Raghad Estanbouli" class="profile_photo" > <!--uploaded portrait photo-->
+        <div id="flipRE">  Click for some Fun Facts about Raghad Estanbouli  </div>
+        <div id="panelRE">Raghad can kick your butt in SQL.
+        </div>   <!-- JQuery activates this panel on click: James Serendip-->
+      </figure></a>
+      <div class="profile_text">
+        <h5>Raghad Estanbouli</h5>
+        <p>Raghad is a GIS Applications Specialist with a background in urban planning and Graphic design.
+          She has 10 years of experience in developing GIS applications and websites, and designing geographic
+          DataBases that solve many real-world problems.  </p>
+      </div>
+    </section>
+    <button onclick="topFunction()" id="topreturnBtn" title="Go to top">Top</button>  
+<!-- footer-->
+
+  </div>
+    <div id="footer">
+      <footer>
+        <p><a href="index.html">Home</a><span> | </span><a href="ourteam.html">Our Team</a><span> | </span><a href="services.html">Services</a><span> | </span><a href="projects.html">Projects</a></p>
+        <p>Copyright &copy; simplestyle_banner <span> | </span><a href="http://validator.w3.org/check?uri=referer">HTML5</a><span> | </span><a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a><span> | </span><a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a> </p>
+      </footer>
+    </div>
+</body>
+</html>
+

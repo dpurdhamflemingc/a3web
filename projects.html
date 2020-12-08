@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+
+<!-- page showing some of our projects to date (i.e. class work) -->
+
+<!-- This site is designed around  open source template simple banner from https://www.html5webtemplates.co.uk -->
+<!-- They request we leave their footer link for attribution -->
+<!-- The page was worked on by the entire team: David Purdham, Raghad Estanbouli, Edyn Hillman and James Serendip-->
+<!-- Created in November/December 2020 for GEOM101 Web Design @ Fleming College-->
+<html lang=en>
+
+<head>    <!-- in the head section we set for responsive coding, include metatags, load our CSS file, load our javascript file -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>EHPS Consulting</title>
+  <meta name="keywords" content="GIS, Data Management, Remote Sensing, Cartography, GIS Applications" />
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <script src="js/jscode.js"> </script> 
+
+
+</head>
+<body>
+  
+  <div id="main">
+    <div id="header">  <!--this begins our header with logo and title and navigation-->
+	    
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour" sets the color of the text -->
+          <h1><a href="index.html">EHPS<span class="logo_colour">GIS Consultancy</span></a></h1>
+          <h2>Geographic Information Solutions</h2>
+        </div>
+      </div> <!-- ends logo settings -->
+     
+       
+       <!--Edyn Hillman owns the following menubar section-->
+       <div id="menubar">
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+              <div class="dropdown">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content">            <!--Dropdown menu that references each service page on the 'Services page' -->
+                <a href="services.html#Urban">Urban Services</a>
+                <a href="services.html#Env">Environmental Services</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Our Team</button>        <!--Dropdown menu that references each profile on the 'Our Team' page-->
+                <div class="dropdown-content">
+                <a href="ourteam.html#DavidsProfile">David Purdham</a>
+                <a href="ourteam.html#JamesProfile">James Serendip</a>
+                <a href="ourteam.html#EdynsProfile">Edyn Hillman</a>
+                <a href="ourteam.html#RaghadsProfile">Raghad Estanbouli</a>
+                </div>
+              </div>
+               
+        </div>
+      </div>  <!--ends menu bar setting --> 
+	    
+    </div> <!-- ends header section -->
+
+
+    <!-- This page layout is owned by Raghad Estanbouli-->
+      <div class="banner2">
+      
+      <!-- James Serendip owns the following "content" section-->
+        <!-- James Serendip owns javascript in this section-->
+        <section class=ProjectSection>
+          <div class="Project-Photo">
+            <!-- javascript references 2 functions on jscode.js page to swap images on mouse over-->
+            <img src= "images/ricelakeuncorrected.JPG" alt="Remote Sensing" id="satimage" onmouseover="newsat()" onmouseout="oldsat()"> 
+          </div>
+          <div class=project_text>
+            <h6>Remote Sensing</h6>
+            <p> 
+              This image shows a Landsat satellite image of the Rice Lake, Ontario area in panchromatic greyscale
+              from an older imaging system that did not have good geolocational coordination.
+              If we want to extract useful data from an image like this, it needs to be geocorrected
+              to fit with coordinate systems for referencing.  Using an overlay of projected and 
+              georeferenced road networks (shown in red) we can see how much the original satellite image
+              is "off" from the correct coordinates.  This road network was used to provide Ground Control
+              Points by which the old satellite image could then be geocorrected to fit the road network and
+              its coordinate system.  <strong>Mouse Over</strong> the photo to see how the image looks after geoprocessing.
+            </p>
+          </div>  
+        </section>
+        <section class=ProjectSection>  <!--David Purdham owns content-->
+          <div class="Project-Photo">
+            <img src= "images/Census10000.jpg" alt="Geovisualization">
+          </div>
+          <div class=project_text>
+            <h6>Geovisualization</h6>
+            <p>
+               This map illustrates the distribution of population density for St. Catharines, Ontario using
+              2016 Census data. The data was extracted from Statistics Canada along with a shapefile for dissemination blocks
+              which were then joined together in ArcGIS Pro. The dissemination blocks file was clipped to the study area 
+              and the population density was calculated and added as a new field. The data could then be displayed for each 
+              dissemination block in the study area and displayed using visual hierarchy with the most dense areas darker than 
+              less dense areas.
+              
+            </p>
+          </div>
+        </section>
+        <section class=ProjectSection>
+          <div class="Project-Photo">   <!--This content is owned by Edyn Hillman-->
+            <img src= "images/surveyimage.jpg" alt="Surveying and CAD Mapping">
+          </div>
+          <div class=project_text>
+            <h6>Surveying and CAD Mapping</h6>
+            <p> 
+              This image shows a Site plan created using the software AUTOCAD and Coordinate Geometry
+              that shows contours and topographic features. This site plan was created for a client near the Township of Ops
+              to document the topographic features of the proposed area for construction. This site plan was created by looking at 
+              a field report with information pertaining to the surveyed roads, lakes, and boathouse. Our job was to digitize
+              these features and appropriately represent them so that construction could commence with the most accuracy.
+            </p>
+          </div>
+        </section>
+      </div> 
+      <div class="banner2">
+        <section class=ProjectSection>     <!--this content is owned by Raghad Estanbouli-->
+          <div class="Project-Photo">
+            <img src= "images/Qualitative.jpg" alt="Landuse Map">
+          </div>
+            <div class=project_text>
+              <h6>Land Use Map</h6>
+              <p>
+                This image shows a Land Use map that covers Quebec City and its surrounding. This map used the UTM projection NAD 83 Zone 19.
+                The map was produced in order to study the crowded residential area and is used as a part of subsequent maps of the Master Planning project for the municipality of Quebec city.   
+              </p>
+            </div>  
+          </section>
+          <section class=ProjectSection>
+            <div class="Project-Photo">
+              <img src= "images/Qualitative100k.jpg" alt="Qualitative Map">     <!--image owned by Raghad Estanbouli-->
+            </div>
+            <div class=project_text>
+              <h6>Cartographic Generalization</h6>  <!--text owned by James Serendip-->
+              <p>
+                Though we now have access to a wealth of data, sometimes analysis can be hindered by having TOO 
+                MUCH information.  When analysis depends upon cartographic visualization, it is important to be
+                able to thin that information down appropriately to the working scale.  This image is a larger
+                scale version of the previous Land Use map, but at this larger scale the road networks and other
+                features have been appropriately generalized to convey the focus without the reader having to sort 
+                through too much clutter on the map.
+              </p>
+            </div>
+          </section>
+          <section class=ProjectSection>   <!--Raghad Estanbouli owns this image-->
+            <div class="Project-Photo">
+              <img src= "images/Model.jpg" alt="Model Builder">
+            </div>
+            <div class=project_text>
+              <h6>Model Building</h6>    <!-- James Serendip owns this text-->
+              <p>
+                Many GIS processes involve the repeated use of sequences of geoprocessing tools.  Here we see 
+                the application of a Model Building structure (in ESRI's ArcGIS Pro software) to visually construct
+                reusable tools for commonly used workflows.  This is a tool sequence for analyzing raster data for
+                site suitability (in this case to establish optimal territory for snail habitats based on elevation,
+                geology and vegetation).  Combining Model Builder technology with programming in Python using arcpy
+                we are able to systematize, and to some degree automate, many common GIS function, and so increase 
+                efficiency.
+              </p>
+            </div>
+          </section>
+        </div> 
+
+
+    <!-- footer-->
+    <div id="footer">
+      <footer>
+        <p><a href="index.html">Home</a><span> | </span><a href="ourteam.html">Our Team</a><span> | </span><a href="services.html">Services</a><span> | </span><a href="projects.html">Projects</a></p>
+        <p>Copyright &copy; simplestyle_banner <span> | </span><a href="http://validator.w3.org/check?uri=referer">HTML5</a><span> | </span><a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a><span> | </span><a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a> </p>
+      </footer>
+    </div>
+
+
+    </div>
+</body>
+</html>
